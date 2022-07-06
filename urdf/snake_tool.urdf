@@ -1,0 +1,1666 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="snake_tool">
+  <link
+    name="link_00">
+    <inertial>
+      <origin
+        xyz="2.35668703791472E-05 -2.61299699022112E-09 0.0203173919737689"
+        rpy="0 0 0" />
+      <mass
+        value="0.000527534386374249" />
+      <inertia
+        ixx="7.466448860433E-08"
+        ixy="-7.88178112159113E-16"
+        ixz="-2.52675663128529E-10"
+        iyy="7.41403897226566E-08"
+        iyz="2.4135734761427E-14"
+        izz="3.44973067771418E-09" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://CDM_ROS2_Description/meshes/link_00.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.690196078431373 0.658823529411765 0.63921568627451 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://CDM_ROS2_Description/meshes/link_00.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="link_01">
+    <inertial>
+      <origin
+        xyz="-0.00147892442192412 -2.17726399010166E-07 0.000615142121024627"
+        rpy="0 0 0" />
+      <mass
+        value="1.27452758455881E-05" />
+      <inertia
+        ixx="5.16029188698462E-11"
+        ixy="-1.18651851984458E-15"
+        ixz="-6.09621128768593E-13"
+        iyy="1.33362434527905E-11"
+        iyz="-4.53529607312573E-15"
+        izz="5.59242640042557E-11" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://CDM_ROS2_Description/meshes/link_01.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.690196078431373 0.658823529411765 0.63921568627451 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://CDM_ROS2_Description/meshes/link_01.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_00"
+    type="revolute">
+    <origin
+      xyz="0 0 0.0410297210859283"
+      rpy="0 0 0" />
+    <parent
+      link="link_00" />
+    <child
+      link="link_01" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_02">
+    <inertial>
+      <origin
+        xyz="0.00148068390677977 -3.65402841962419E-08 0.000611071866284472"
+        rpy="0 0 0" />
+      <mass
+        value="1.25940330913542E-05" />
+      <inertia
+        ixx="5.08681060545702E-11"
+        ixy="-4.68122504331524E-16"
+        ixz="5.88885446601518E-13"
+        iyy="1.30468528470102E-11"
+        iyz="2.80246168310479E-17"
+        izz="5.51959311755078E-11" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://CDM_ROS2_Description/meshes/link_02.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.690196078431373 0.658823529411765 0.63921568627451 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://CDM_ROS2_Description/meshes/link_02.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_01"
+    type="revolute">
+    <origin
+      xyz="0 0 0.00132488253734261"
+      rpy="0 0 0" />
+    <parent
+      link="link_01" />
+    <child
+      link="link_02" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_03">
+    <inertial>
+      <origin
+        xyz="-0.00148406757566199 -2.17820665667676E-07 0.000605258896136662"
+        rpy="0 0 0" />
+      <mass
+        value="1.24583333094806E-05" />
+      <inertia
+        ixx="5.01659035371798E-11"
+        ixy="-1.11127626069531E-15"
+        ixz="-5.9598174355448E-13"
+        iyy="1.28097706434359E-11"
+        iyz="-4.40972236400473E-15"
+        izz="5.44923802211146E-11" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://CDM_ROS2_Description/meshes/link_03.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.690196078431373 0.658823529411765 0.63921568627451 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://CDM_ROS2_Description/meshes/link_03.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_02"
+    type="revolute">
+    <origin
+      xyz="0 0 0.00131520544017122"
+      rpy="0 0 0" />
+    <parent
+      link="link_02" />
+    <child
+      link="link_03" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_04">
+    <inertial>
+      <origin
+        xyz="0.00148583301384426 -3.36618502777044E-08 0.000601210186650145"
+        rpy="0 0 0" />
+      <mass
+        value="1.23074072610594E-05" />
+      <inertia
+        ixx="4.94404914526352E-11"
+        ixy="-4.67564885016081E-16"
+        ixz="5.75433694433049E-13"
+        iyy="1.25279566579401E-11"
+        iyz="2.03142035654176E-17"
+        izz="5.37694862283114E-11" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://CDM_ROS2_Description/meshes/link_04.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.690196078431373 0.658823529411765 0.63921568627451 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://CDM_ROS2_Description/meshes/link_04.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_03"
+    type="revolute">
+    <origin
+      xyz="0 0 0.00130552834300195"
+      rpy="0 0 0" />
+    <parent
+      link="link_03" />
+    <child
+      link="link_04" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_05">
+    <inertial>
+      <origin
+        xyz="-0.00148927189260345 -2.17574415574763E-07 0.000595370300942366"
+        rpy="0 0 0" />
+      <mass
+        value="1.21725767298699E-05" />
+      <inertia
+        ixx="4.87473062099425E-11"
+        ixy="-1.03474806339228E-15"
+        ixz="-5.82404658596172E-13"
+        iyy="1.22977259463792E-11"
+        iyz="-4.28210837441207E-15"
+        izz="5.30712586363527E-11" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://CDM_ROS2_Description/meshes/link_05.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.690196078431373 0.658823529411765 0.63921568627451 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://CDM_ROS2_Description/meshes/link_05.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_04"
+    type="revolute">
+    <origin
+      xyz="0 0 0.00129585124582631"
+      rpy="0 0 0" />
+    <parent
+      link="link_04" />
+    <child
+      link="link_05" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_06">
+    <inertial>
+      <origin
+        xyz="0.00149105952990621 -3.2925687688683E-08 0.000591327301909743"
+        rpy="0 0 0" />
+      <mass
+        value="1.20222329033018E-05" />
+      <inertia
+        ixx="4.80312949256765E-11"
+        ixy="-4.65263908537417E-16"
+        ixz="5.62178371265709E-13"
+        iyy="1.20235935469903E-11"
+        iyz="1.6012625108914E-17"
+        izz="5.23538871412496E-11" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://CDM_ROS2_Description/meshes/link_06.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.690196078431373 0.658823529411765 0.63921568627451 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://CDM_ROS2_Description/meshes/link_06.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_05"
+    type="revolute">
+    <origin
+      xyz="0 0 0.00128617414865916"
+      rpy="0 0 0" />
+    <parent
+      link="link_05" />
+    <child
+      link="link_06" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_07">
+    <inertial>
+      <origin
+        xyz="-0.00147294479902769 -2.23330719014726E-07 0.000586699350124315"
+        rpy="0 0 0" />
+      <mass
+        value="1.16358994606626E-05" />
+      <inertia
+        ixx="4.7325869493565E-11"
+        ixy="-1.02720392999769E-15"
+        ixz="-5.54393873789721E-13"
+        iyy="1.14959790533666E-11"
+        iyz="-4.17030994514535E-15"
+        izz="5.13577977505308E-11" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://CDM_ROS2_Description/meshes/link_07.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.690196078431373 0.658823529411765 0.63921568627451 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://CDM_ROS2_Description/meshes/link_07.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_06"
+    type="revolute">
+    <origin
+      xyz="0 0 0.00127649705148352"
+      rpy="0 0 0" />
+    <parent
+      link="link_06" />
+    <child
+      link="link_07" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_08">
+    <inertial>
+      <origin
+        xyz="0.00147451409871677 -3.27060152723131E-08 0.000582483187573632"
+        rpy="0 0 0" />
+      <mass
+        value="1.14861453684126E-05" />
+      <inertia
+        ixx="4.66193672336726E-11"
+        ixy="-4.65990909578055E-16"
+        ixz="5.36780777923417E-13"
+        iyy="1.12304574610667E-11"
+        iyz="1.30206095170749E-17"
+        izz="5.06467847728289E-11" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://CDM_ROS2_Description/meshes/link_08.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.690196078431373 0.658823529411765 0.63921568627451 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://CDM_ROS2_Description/meshes/link_08.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_07"
+    type="revolute">
+    <origin
+      xyz="0 0 0.00126681995431425"
+      rpy="0 0 0" />
+    <parent
+      link="link_07" />
+    <child
+      link="link_08" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_09">
+    <inertial>
+      <origin
+        xyz="-0.0014998820462853 -2.17525952741247E-07 0.000575574157206001"
+        rpy="0 0 0" />
+      <mass
+        value="1.16046349573238E-05" />
+      <inertia
+        ixx="4.59643756639414E-11"
+        ixy="-8.88858398734854E-16"
+        ixz="-5.55446389675805E-13"
+        iyy="1.13157611365688E-11"
+        iyz="-4.04083385062988E-15"
+        izz="5.02612127828714E-11" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://CDM_ROS2_Description/meshes/link_09.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.690196078431373 0.658823529411765 0.63921568627451 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://CDM_ROS2_Description/meshes/link_09.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_08"
+    type="revolute">
+    <origin
+      xyz="0 0 0.00125714285714286"
+      rpy="0 0 0" />
+    <parent
+      link="link_08" />
+    <child
+      link="link_09" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_10">
+    <inertial>
+      <origin
+        xyz="0.00150172033516121 -3.36740695833204E-08 0.000571542488453917"
+        rpy="0 0 0" />
+      <mass
+        value="1.14554812323596E-05" />
+      <inertia
+        ixx="4.52667781190358E-11"
+        ixy="-4.53949386027399E-16"
+        ixz="5.35853951398071E-13"
+        iyy="1.10565289690991E-11"
+        iyz="-3.82380648972754E-18"
+        izz="4.95548529391683E-11" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://CDM_ROS2_Description/meshes/link_10.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.690196078431373 0.658823529411765 0.63921568627451 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://CDM_ROS2_Description/meshes/link_10.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_09"
+    type="revolute">
+    <origin
+      xyz="0 0 0.00124746575997359"
+      rpy="0 0 0" />
+    <parent
+      link="link_09" />
+    <child
+      link="link_10" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_11">
+    <inertial>
+      <origin
+        xyz="-0.00150529746547762 -2.17731562974721E-07 0.000565665829177199"
+        rpy="0 0 0" />
+      <mass
+        value="1.1322448006399E-05" />
+      <inertia
+        ixx="4.45995308510558E-11"
+        ixy="-8.19239377702608E-16"
+        ixz="-5.42064112999091E-13"
+        iyy="1.08452523133465E-11"
+        iyz="-3.92673742350335E-15"
+        izz="4.88722292997341E-11" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://CDM_ROS2_Description/meshes/link_11.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.690196078431373 0.658823529411765 0.63921568627451 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://CDM_ROS2_Description/meshes/link_11.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_10"
+    type="revolute">
+    <origin
+      xyz="0 0 0.00123778866279794"
+      rpy="0 0 0" />
+    <parent
+      link="link_10" />
+    <child
+      link="link_11" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_12">
+    <inertial>
+      <origin
+        xyz="0.00150716423439975 -3.40718336898719E-08 0.000561640423887039"
+        rpy="0 0 0" />
+      <mass
+        value="1.11738855922553E-05" />
+      <inertia
+        ixx="4.39109357455132E-11"
+        ixy="-4.48268172147302E-16"
+        ixz="5.22783553015223E-13"
+        iyy="1.05932398384581E-11"
+        iyz="-1.3455809422435E-17"
+        izz="4.81713478024835E-11" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://CDM_ROS2_Description/meshes/link_12.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.690196078431373 0.658823529411765 0.63921568627451 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://CDM_ROS2_Description/meshes/link_12.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_11"
+    type="revolute">
+    <origin
+      xyz="0 0 0.00122811156562867"
+      rpy="0 0 0" />
+    <parent
+      link="link_11" />
+    <child
+      link="link_12" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_13">
+    <inertial>
+      <origin
+        xyz="-0.00151079330452715 -2.17581865655582E-07 0.000555750546415795"
+        rpy="0 0 0" />
+      <mass
+        value="1.10414439583088E-05" />
+      <inertia
+        ixx="4.32520830448326E-11"
+        ixy="-7.48364147071053E-16"
+        ixz="-5.28742782746577E-13"
+        iyy="1.03879961676492E-11"
+        iyz="-3.81089003633407E-15"
+        izz="4.74938904717594E-11" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://CDM_ROS2_Description/meshes/link_13.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.690196078431373 0.658823529411765 0.63921568627451 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://CDM_ROS2_Description/meshes/link_13.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_12"
+    type="revolute">
+    <origin
+      xyz="0 0 0.00121843446845728"
+      rpy="0 0 0" />
+    <parent
+      link="link_12" />
+    <child
+      link="link_13" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_14">
+    <inertial>
+      <origin
+        xyz="0.00151269121367945 -3.44860750290071E-08 0.000551731348080273"
+        rpy="0 0 0" />
+      <mass
+        value="1.08934757683148E-05" />
+      <inertia
+        ixx="4.2572367205113E-11"
+        ixy="-4.42553697563962E-16"
+        ixz="5.09773782146332E-13"
+        iyy="1.01430579010672E-11"
+        iyz="-2.28792095518187E-17"
+        izz="4.67984773512594E-11" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://CDM_ROS2_Description/meshes/link_14.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.690196078431373 0.658823529411765 0.63921568627451 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://CDM_ROS2_Description/meshes/link_14.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_13"
+    type="revolute">
+    <origin
+      xyz="0 0 0.00120875737128587"
+      rpy="0 0 0" />
+    <parent
+      link="link_13" />
+    <child
+      link="link_14" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_15">
+    <inertial>
+      <origin
+        xyz="-0.00151619351182923 -2.21844398100672E-07 0.000545892263427696"
+        rpy="0 0 0" />
+      <mass
+        value="1.07631201406372E-05" />
+      <inertia
+        ixx="4.19304989548377E-11"
+        ixy="-7.81478553532606E-16"
+        ixz="-5.16543567699442E-13"
+        iyy="9.94671402943223E-12"
+        iyz="-3.67101594458888E-15"
+        izz="4.61368126433472E-11" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://CDM_ROS2_Description/meshes/link_15.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.690196078431373 0.658823529411765 0.63921568627451 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://CDM_ROS2_Description/meshes/link_15.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_14"
+    type="revolute">
+    <origin
+      xyz="0 0 0.00119908027411451"
+      rpy="0 0 0" />
+    <parent
+      link="link_14" />
+    <child
+      link="link_15" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_16">
+    <inertial>
+      <origin
+        xyz="0.00150825889430822 1.6668204415883E-08 0.000551920410574669"
+        rpy="0 0 0" />
+      <mass
+        value="1.05164541743147E-05" />
+      <inertia
+        ixx="4.0997738330201E-11"
+        ixy="2.21856650596166E-16"
+        ixz="3.84045414986297E-13"
+        iyy="9.4803441433773E-12"
+        iyz="3.05768965680575E-16"
+        izz="4.51886257513523E-11" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://CDM_ROS2_Description/meshes/link_16.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.690196078431373 0.658823529411765 0.63921568627451 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://CDM_ROS2_Description/meshes/link_16.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_15"
+    type="revolute">
+    <origin
+      xyz="0 0 0.0011894031769431"
+      rpy="0 0 0" />
+    <parent
+      link="link_15" />
+    <child
+      link="link_16" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_17">
+    <inertial>
+      <origin
+        xyz="-0.00149784973921674 -2.02855948331742E-07 0.000534886763456664"
+        rpy="0 0 0" />
+      <mass
+        value="1.02334472879023E-05" />
+      <inertia
+        ixx="4.06025385055761E-11"
+        ixy="-1.19240310677061E-15"
+        ixz="-5.12955052736077E-13"
+        iyy="9.22663809778203E-12"
+        iyz="-3.35290305935437E-15"
+        izz="4.44973636428216E-11" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://CDM_ROS2_Description/meshes/link_17.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.690196078431373 0.658823529411765 0.63921568627451 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://CDM_ROS2_Description/meshes/link_17.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_16"
+    type="revolute">
+    <origin
+      xyz="0 0 0.0011797260797717"
+      rpy="0 0 0" />
+    <parent
+      link="link_16" />
+    <child
+      link="link_17" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_18">
+    <inertial>
+      <origin
+        xyz="0.00149962090659085 1.00460415511859E-08 0.000530638802047879"
+        rpy="0 0 0" />
+      <mass
+        value="1.00854062599699E-05" />
+      <inertia
+        ixx="3.99340703129697E-11"
+        ixy="1.44106685654495E-16"
+        ixz="4.96191015186798E-13"
+        iyy="8.9937842834374E-12"
+        iyz="2.19072336236229E-16"
+        izz="4.38065180027315E-11" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://CDM_ROS2_Description/meshes/link_18.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.690196078431373 0.658823529411765 0.63921568627451 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://CDM_ROS2_Description/meshes/link_18.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_17"
+    type="revolute">
+    <origin
+      xyz="0 0 0.00117004898260031"
+      rpy="0 0 0" />
+    <parent
+      link="link_17" />
+    <child
+      link="link_18" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_19">
+    <inertial>
+      <origin
+        xyz="-0.00152754119922582 -1.96127319022392E-07 0.000525967665340354"
+        rpy="0 0 0" />
+      <mass
+        value="1.02078004597305E-05" />
+      <inertia
+        ixx="3.93247266111048E-11"
+        ixy="-1.04274587675984E-15"
+        ixz="-4.89407070650333E-13"
+        iyy="9.09719659349445E-12"
+        iyz="-3.25137987640047E-15"
+        izz="4.34386784969131E-11" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://CDM_ROS2_Description/meshes/link_19.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.690196078431373 0.658823529411765 0.63921568627451 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://CDM_ROS2_Description/meshes/link_19.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_18"
+    type="revolute">
+    <origin
+      xyz="0 0 0.00116037188542892"
+      rpy="0 0 0" />
+    <parent
+      link="link_18" />
+    <child
+      link="link_19" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_20">
+    <inertial>
+      <origin
+        xyz="0.00152964300868249 8.02022636982486E-09 0.000521962288772715"
+        rpy="0 0 0" />
+      <mass
+        value="1.00605032731873E-05" />
+      <inertia
+        ixx="3.8665651539535E-11"
+        ixy="1.50729132394883E-16"
+        ixz="4.70812581429556E-13"
+        iyy="8.87052949255814E-12"
+        iyz="1.51250612209434E-16"
+        izz="4.27531594838465E-11" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://CDM_ROS2_Description/meshes/link_20.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.690196078431373 0.658823529411765 0.63921568627451 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://CDM_ROS2_Description/meshes/link_20.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_19"
+    type="revolute">
+    <origin
+      xyz="0 0 0.00115069478825752"
+      rpy="0 0 0" />
+    <parent
+      link="link_19" />
+    <child
+      link="link_20" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_21">
+    <inertial>
+      <origin
+        xyz="-0.00153296129473302 -1.95488782489703E-07 0.000517845250356946"
+        rpy="0 0 0" />
+      <mass
+        value="9.95419229086504E-06" />
+      <inertia
+        ixx="3.81488598483059E-11"
+        ixy="-9.59746630473106E-16"
+        ixz="-4.80292648456871E-13"
+        iyy="8.72309905395388E-12"
+        iyz="-3.16418723342939E-15"
+        izz="4.22113431792743E-11" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://CDM_ROS2_Description/meshes/link_21.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.690196078431373 0.658823529411765 0.63921568627451 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://CDM_ROS2_Description/meshes/link_21.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_20"
+    type="revolute">
+    <origin
+      xyz="0 0 0.00114101769108614"
+      rpy="0 0 0" />
+    <parent
+      link="link_20" />
+    <child
+      link="link_21" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_22">
+    <inertial>
+      <origin
+        xyz="0.00153310832998731 6.72461169202683E-09 0.000519163430946046"
+        rpy="0 0 0" />
+      <mass
+        value="9.89934772982008E-06" />
+      <inertia
+        ixx="3.79210404901153E-11"
+        ixy="1.31641866000709E-16"
+        ixz="4.72021736954792E-13"
+        iyy="8.63553328339063E-12"
+        iyz="1.18843366380286E-16"
+        izz="4.19741606353533E-11" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://CDM_ROS2_Description/meshes/link_22.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.690196078431373 0.658823529411765 0.63921568627451 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://CDM_ROS2_Description/meshes/link_22.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_21"
+    type="revolute">
+    <origin
+      xyz="0 0 0.00113295011421438"
+      rpy="0 0 0" />
+    <parent
+      link="link_21" />
+    <child
+      link="link_22" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_23">
+    <inertial>
+      <origin
+        xyz="-0.00153396069900295 -1.95586934383365E-07 0.000518190398344498"
+        rpy="0 0 0" />
+      <mass
+        value="9.90814006667915E-06" />
+      <inertia
+        ixx="3.79366117557679E-11"
+        ixy="-9.46546207871406E-16"
+        ixz="-4.83880645827756E-13"
+        iyy="8.65640565394515E-12"
+        iyz="-3.14862991814663E-15"
+        izz="4.19888423576455E-11" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://CDM_ROS2_Description/meshes/link_23.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.690196078431373 0.658823529411765 0.63921568627451 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://CDM_ROS2_Description/meshes/link_23.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_22"
+    type="revolute">
+    <origin
+      xyz="0 0 0.00112972108592831"
+      rpy="0 0 0" />
+    <parent
+      link="link_22" />
+    <child
+      link="link_23" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_24">
+    <inertial>
+      <origin
+        xyz="0.001533108329988 6.72461224702704E-09 0.000519163430944075"
+        rpy="0 0 0" />
+      <mass
+        value="9.89934772981781E-06" />
+      <inertia
+        ixx="3.7921040490067E-11"
+        ixy="1.31641869389347E-16"
+        ixz="4.72021736958288E-13"
+        iyy="8.63553328335555E-12"
+        iyz="1.18843370995283E-16"
+        izz="4.19741606353177E-11" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://CDM_ROS2_Description/meshes/link_24.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.690196078431373 0.658823529411765 0.63921568627451 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://CDM_ROS2_Description/meshes/link_24.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_23"
+    type="revolute">
+    <origin
+      xyz="0 0 0.00112972108593046"
+      rpy="0 0 0" />
+    <parent
+      link="link_23" />
+    <child
+      link="link_24" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_25">
+    <inertial>
+      <origin
+        xyz="-0.00153396069900209 -1.9558693433272E-07 0.000518190398344637"
+        rpy="0 0 0" />
+      <mass
+        value="9.90814006668526E-06" />
+      <inertia
+        ixx="3.79366117559448E-11"
+        ixy="-9.4654620849542E-16"
+        ixz="-4.83880645830919E-13"
+        iyy="8.65640565410423E-12"
+        iyz="-3.14862992070367E-15"
+        izz="4.19888423576887E-11" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://CDM_ROS2_Description/meshes/link_25.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.690196078431373 0.658823529411765 0.63921568627451 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://CDM_ROS2_Description/meshes/link_25.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_24"
+    type="revolute">
+    <origin
+      xyz="0 0 0.00112972108592616"
+      rpy="0 0 0" />
+    <parent
+      link="link_24" />
+    <child
+      link="link_25" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_26">
+    <inertial>
+      <origin
+        xyz="0.00153310832998732 6.7246117142601E-09 0.000519163430946198"
+        rpy="0 0 0" />
+      <mass
+        value="9.89934772981985E-06" />
+      <inertia
+        ixx="3.79210404899603E-11"
+        ixy="1.31641866328248E-16"
+        ixz="4.72021736956893E-13"
+        iyy="8.63553328323615E-12"
+        iyz="1.18843367986129E-16"
+        izz="4.19741606353525E-11" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://CDM_ROS2_Description/meshes/link_26.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.690196078431373 0.658823529411765 0.63921568627451 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://CDM_ROS2_Description/meshes/link_26.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_25"
+    type="revolute">
+    <origin
+      xyz="0 0 0.00112972108592835"
+      rpy="0 0 0" />
+    <parent
+      link="link_25" />
+    <child
+      link="link_26" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_27">
+    <inertial>
+      <origin
+        xyz="-0.000377914565002361 -1.36936630194445E-07 0.00135292774437266"
+        rpy="0 0 0" />
+      <mass
+        value="2.79672420357717E-05" />
+      <inertia
+        ixx="1.20314459576674E-10"
+        ixy="-6.72284173836868E-15"
+        ixz="-1.09934186413731E-11"
+        iyy="9.26724952786902E-11"
+        iyz="-1.19889841860555E-14"
+        izz="1.80247092502113E-10" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://CDM_ROS2_Description/meshes/link_27.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.690196078431373 0.658823529411765 0.63921568627451 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://CDM_ROS2_Description/meshes/link_27.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_26"
+    type="revolute">
+    <origin
+      xyz="0 0 0.00112972108592829"
+      rpy="0 0 0" />
+    <parent
+      link="link_26" />
+    <child
+      link="link_27" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_ee">
+    <inertial>
+      <origin
+        xyz="-0.00037791456500236 -1.3693663019444E-07 -0.00117679334155564"
+        rpy="0 0 0" />
+      <mass
+        value="2.79672420357717E-05" />
+      <inertia
+        ixx="1.20314459576674E-10"
+        ixy="-6.72284173836918E-15"
+        ixz="-1.09934186413731E-11"
+        iyy="9.26724952786901E-11"
+        iyz="-1.19889841860555E-14"
+        izz="1.80247092502113E-10" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://CDM_ROS2_Description/meshes/link_ee.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.690196078431373 0.658823529411765 0.63921568627451 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://CDM_ROS2_Description/meshes/link_ee.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_27"
+    type="fixed">
+    <origin
+      xyz="0 0 0.0025297210859283"
+      rpy="0 0 0" />
+    <parent
+      link="link_27" />
+    <child
+      link="link_ee" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+</robot>
