@@ -14,7 +14,7 @@ def generate_launch_description():
     default_rviz_config_path = snake_description_path / 'rviz/view_snake.rviz'
 
     gui_arg = DeclareLaunchArgument(name='gui', default_value='true', choices=['true', 'false'],
-                                    description='Flag to enable joint_state_publisher_gui')
+                                    description='Flag to enable snake_bend_slider_gui')
     model_arg = DeclareLaunchArgument(name='model', default_value=str(default_model_path),
                                       description='Absolute path to robot urdf file')
     rviz_arg = DeclareLaunchArgument(name='rvizconfig', default_value=str(default_rviz_config_path),
@@ -36,9 +36,9 @@ def generate_launch_description():
         condition=UnlessCondition(LaunchConfiguration('gui'))
     )
 
-    joint_state_publisher_gui_node = Node(
-        package='joint_state_publisher_gui',
-        executable='joint_state_publisher_gui',
+    snake_bend_slider_gui_node = Node(
+        package='snake_description',
+        executable='snake_bend_slider_gui',
         condition=IfCondition(LaunchConfiguration('gui'))
     )
 
@@ -55,7 +55,7 @@ def generate_launch_description():
         model_arg,
         rviz_arg,
         joint_state_publisher_node,
-        joint_state_publisher_gui_node,
+        snake_bend_slider_gui_node,
         robot_state_publisher_node,
         rviz_node
     ])
